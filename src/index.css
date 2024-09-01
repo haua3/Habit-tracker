@@ -1,13 +1,70 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  height: 3rem;
+  width: 16rem;
+  font-size: 1.2rem;
+  border: 1px sold darkred;
+  border: 1px solid #b0c6d0;
+  padding: 0 8rem 0 12px;
+}
+
+button {
+  height: 3.1rem;
+  width: 5rem;
+  padding: -1px 12px;
+  font-size: 1.2rem;
+  background: #ED3EF7;
+  border-color: #ED3EF7;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+select {
+  font-size: 1.2rem;
+  border: 1px sold darkred;
+  border: 1px solid #b0c6d0;
+  padding: 0 12px;
+  position: absolute;
+  right: 0;
+  border: none;
+  text-align: center;
+  top: 12px;
+  right: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.habitContainer {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 70vh;
+  overflow-x: hidden;
+}
+
+.habit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #95ef95;
+  padding: 1rem;
+  color: #000f;
+  margin-top: 1rem;
 }
