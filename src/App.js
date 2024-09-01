@@ -11,16 +11,19 @@ export default function App() {
   const [freq, setFreq] = useState("Daily");
 
   // window height
-  const height = window.innerHeight-100;
+  const height = window.innerHeight - 100;
   // window width
-  const width = window.innerWidth-100;
+  const width = window.innerWidth - 100;
 
   const [habitAdded, setHabitAdded] = useState(false);
+  let confettiTimer;
 
   function handleFormSubmit(e) {
     e.preventDefault();
 
     if (!habit) return;
+    
+    clearTimeout(confettiTimer);
 
     const newHabit = {
       id: window.Date.now(),
@@ -36,7 +39,7 @@ export default function App() {
     setFreq("Daily");
     setHabitAdded((h) => !h);
 
-    setTimeout((e) => {
+    confettiTimer = setTimeout((e) => {
       setHabitAdded((h) => !h);
     }, 3000);
   }
