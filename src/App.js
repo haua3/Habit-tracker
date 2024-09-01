@@ -22,7 +22,7 @@ export default function App() {
     e.preventDefault();
 
     if (!habit) return;
-    
+
     clearTimeout(confettiTimer);
 
     const newHabit = {
@@ -56,6 +56,7 @@ export default function App() {
                 type="text"
                 value={habit}
                 onChange={(e) => setHabit(e.target.value)}
+                autoFocus={true}
                 placeholder="Add a habit"
               />
               <select
