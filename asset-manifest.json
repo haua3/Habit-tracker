@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/haua3/Habit-tracker/static/css/main.bc69257f.css",
+    "main.js": "/haua3/Habit-tracker/static/js/main.1b3994f1.js",
+    "index.html": "/haua3/Habit-tracker/index.html",
+    "main.bc69257f.css.map": "/haua3/Habit-tracker/static/css/main.bc69257f.css.map",
+    "main.1b3994f1.js.map": "/haua3/Habit-tracker/static/js/main.1b3994f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc69257f.css",
+    "static/js/main.1b3994f1.js"
+  ]
+}
