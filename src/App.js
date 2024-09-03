@@ -32,7 +32,7 @@ export default function App() {
     };
 
     setHabits((habits) => {
-      return [...habits, newHabit];
+      return [newHabit,...habits];
     });
 
     setHabit("");
